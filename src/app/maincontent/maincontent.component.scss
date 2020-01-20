@@ -1,0 +1,243 @@
+.container{
+
+    background: -webkit-linear-gradient(rgba(45, 45, 46, 0.8), rgba(48, 48, 49, 0.8)), url("../../asset/safe.png");
+    //background: url("../../asset/safe.png")  no-repeat;
+    display: flex;
+    width: 100%;
+    
+    min-height: 100%;
+    background-size: cover;
+    height: 500px;
+    
+}
+
+.steps{
+    display: flex;
+    min-height: 400px;
+}
+
+.secstep{
+    display: flex;
+    min-height: 300px;
+    background: red;
+}
+
+.footer-details{
+    display: flex;
+    min-height: 400px;
+    background: lightgrey;
+}
+
+h3{
+    font-family: 'Roboto', cursive;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 100;
+    
+}
+
+h1{
+    color: #fff;
+    font-size: 1.8rem;
+    text-align: justify;
+}
+
+button{
+    color: #fff;
+    margin-top: 20px;
+    background: #3bb75e;
+    height: 50px;
+    border-radius: 3px;
+    border: none;
+    padding: 0 32px 0 32px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    transform: translateY(0);
+    transition: all 0.2s ease;
+    
+}
+
+button:hover{
+    background: rgb(17, 136, 17);
+    transform: translateY(-2px);
+    transition: all 0.2s ease;
+}
+
+.hero{
+     display: grid;
+     grid-template-columns: 1fr;
+     padding:10px 20px 0 20px;   
+}
+
+.hero-pitch{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.steps{
+        display: block;
+        position: relative;
+        z-index: 1;
+        margin-top: -50px; 
+}
+
+.card-container{
+    
+        width: 100%;
+        
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 70%;
+        
+        display: flex;
+        
+        border-radius: 10px;
+    
+}
+
+.cards{
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) ;
+  grid-gap: 1px;
+  box-sizing: border-box;
+  height: fit-content;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+ 
+}
+
+.box, .box-3{
+    background-color:#f7fbfb;
+    border-radius: 10px;
+}
+
+
+
+.box, .box-3{
+    height: 250px;
+    padding: 20px;
+    
+}
+
+.icons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.logoone{
+    background-image: url("../../asset/growth.svg");
+    width: 50px;
+    height: 50px;
+    background-size:contain;
+}
+
+.logo-two{
+    background-image: url("../../asset/meeting.svg");
+    width: 50px;
+    height: 50px;
+    background-size:contain;
+}
+
+.logo-three{
+    background-image: url("../../asset/presentation.svg");
+    width: 50px;
+    height: 50px;
+    background-size:contain;
+}
+.box:hover .logoone, .box:hover .logo-two, .box-3:hover .logo-three{
+    animation: rotaty 0.15s ease-in-out 3;
+}
+
+
+h2{
+    text-align: center;
+    vertical-align: middle;
+    color: rgb(18, 116, 214);
+}
+
+.card-text{
+    color: gray;
+    text-align: justify;
+  text-justify: inter-word;
+  font-weight: lighter;
+}
+
+h3{
+    display: none;
+}
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 0 20px 0 20xp;
+    width: 100%;
+    background: #495057;
+    padding: 50px;
+    color: rgb(199, 204, 209);
+    grid-gap: 10px;
+}
+
+
+.social-icons{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 50px;
+    cursor: pointer;
+
+}
+.fab{
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.fab:hover{
+    transform: scale(1.2);
+    transition: all .2s ease .2s;
+    color: #fff;
+}
+
+.contact-footer > p{
+    margin: 5px 5px 5px 0;
+    font-weight: 300;
+    
+}
+
+.footer-header{
+    color: #83D0F2;
+}
+
+.second-step, app-section-two {
+    height: 400px;
+    background: #fff;
+}
+
+@keyframes rotaty {
+    from{
+        transform: rotate(0deg);
+        transform-origin: center;
+    }
+
+    to{
+      transform: rotate(360deg);
+      transform-origin: center;
+    }
+}
+
+@media (min-width: 48em) {
+h3{display: block;
+text-align: justify}
+
+.hero{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px 50px 0 50px;
+}
+.hero-pitch{
+  align-items: inherit; 
+}
+}
